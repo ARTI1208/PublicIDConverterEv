@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="@android:style/Widget.Material.ActionBar">
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:colorPrimaryDark">#9e9e9e</item>
+    </style>
+</resources>

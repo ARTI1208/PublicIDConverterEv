@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Source public:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/source_public_path"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/source_public_open"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Open.." />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#757575" />
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/fileRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source smali file:" />
+
+            <LinearLayout
+                android:id="@+id/file_layout"
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/source_smali_file_path"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/source_smali_file_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Open.." />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/folderRB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source smali folder:" />
+
+            <LinearLayout
+                android:id="@+id/folder_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/source_smali_folder_path"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/source_smali_folder_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Open.." />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/subfolders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Include subfolders" />
+            </LinearLayout>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#757575" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Port public:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/port_public_path"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/port_public_open"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Open.." />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_gravity="bottom|right"
+    android:gravity="bottom|right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/buttons_container">
+
+
+            <ru.art2000.widgets.Floatin
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:elevate="true"
+                app:strokeWidth="1dp"
+                android:id="@+id/tmp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_open_log" />
+
+
+            <ru.art2000.widgets.Floatin
+                android:id="@+id/log_opener"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:elevate="true"
+                app:strokeWidth="1dp"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_open_log" />
+
+            <ru.art2000.widgets.Floatin
+                android:id="@+id/findIdsBtn"
+                android:layout_width="50dp"
+
+                app:backColor="#ffffc107"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                app:elevate="true"
+                android:src="@drawable/ic_find_ids"/>
+
+            <ru.art2000.widgets.Floatin
+                android:id="@+id/convertBtn"
+                app:backColor="#ff03a9f4"
+                app:elevate="true"
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_convert" />
+
+        </LinearLayout>
+    <!--<ru.art2000.widgets.NiceFloatingButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+</LinearLayout>
+</FrameLayout>

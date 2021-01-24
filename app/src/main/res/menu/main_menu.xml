@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/swap"
+        android:icon="@drawable/ic_action_swap"
+        android:title="Swap source/port publics"
+        android:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/overwrite"
+        android:title="Overwrite"
+        android:checkable="true"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/overwriteMis"
+        android:checkable="true"
+        android:title="Overwrite if missing"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/skipModified"
+        android:checkable="true"
+        android:title="Skip modified"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/skipMissingModified"
+        android:checkable="true"
+        android:title="Skip modified if missing"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sourceFramework"
+        android:checkable="true"
+        android:title="Framework source files"
+        android:showAsAction="never"/>
+
+    <item
+        android:id="@+id/portFramework"
+        android:checkable="true"
+        android:title="Framework port public"
+        android:showAsAction="never"/>
+
+</menu>

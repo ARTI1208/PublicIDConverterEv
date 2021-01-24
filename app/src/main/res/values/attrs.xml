@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NiceButton">
+        <attr name="backColor" format="color|reference" />
+        <attr name="diameter" format="dimension|reference" />
+        <attr name="strokeWidth" format="dimension|reference" />
+        <attr name="strokeColor" format="color|reference" />
+        <attr name="elevate" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="YesNoPopUp" >
+        <attr name="popUpStrokeWidth" format="dimension|reference" />
+        <attr name="popUpStrokeColor" format="color|reference" />
+        <attr name="popUpText" format="string|reference" />
+        <attr name="popUpTextColor" format="color|reference" />
+        <attr name="popUpType" format="enum">
+            <enum name="yesOnly" value="1"/>
+            <enum name="yes_no" value="0" />
+            <enum name="noOnly" value="-1"/>
+        </attr>
+        <attr name="confirmBtnIcon" format="reference" />
+        <attr name="cancelBtnIcon" format="reference" />
+        <attr name="popUpBackground" format="color|reference" />
+    </declare-styleable>
+
+</resources>
